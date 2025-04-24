@@ -14,11 +14,19 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**Theory**
+**Theory:**
+Boolean Function Minimization is the process of reducing a Boolean expression to its simplest form without changing its functionality. This minimization reduces the number of gates and inputs required, optimizing circuit design.
 
-**Logic Diagram**
+Logic Gates: Fundamental building blocks like AND, OR, and NOT gates are used to implement Boolean expressions. Karnaugh Map (K-map): A graphical technique for minimizing Boolean expressions by grouping terms based on commonalities. The given Boolean functions can be minimized as follows:
 
-**Procedure**
+F1 = A’B’C’D’ + AC’D’ + B’CD’ + A’BCD + BC’D The terms can be simplified using K-map techniques to reduce the complexity of the circuit. F2 = xy’z + x’y’z + w’xy + wx’y + wxy Similar simplification can be done for this function to reduce the gate count. The resulting minimized expressions are implemented using Verilog HDL and simulated on the Quartus Prime tool. The outputs can then be verified on an FPGA board (e.g., Cyclone II).
+
+**Logic Diagram:**
+
+![image](https://github.com/user-attachments/assets/a6f4d3c3-a6c9-4186-a484-2417c7a19e7c)
+
+
+**Procedure:**
 
 1.	Type the program in Quartus software.
 
@@ -53,16 +61,19 @@ RegisterNumber:212224230112
 
 
 **RTL realization:**
+
 ![WhatsApp Image 2025-04-23 at 21 49 28_d7f6ecd2](https://github.com/user-attachments/assets/556a1f30-edc3-46ab-af72-e6161b7d736d)
 
 
 
 **RTL:**
+
    ![WhatsApp Image 2025-04-23 at 21 44 11_7220bdae](https://github.com/user-attachments/assets/4b8fe466-3c90-4726-a90d-af9f9fd175c6)
 
 
 
 **Timing Diagram:**
+
 ![image](https://github.com/user-attachments/assets/d2f02f81-8016-41fe-9d77-e2bb86183163)
 
 
